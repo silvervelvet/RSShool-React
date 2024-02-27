@@ -8,8 +8,7 @@
     "build": "tsc && vite build",
     "lint": "eslint src/ --fix",
     "format:fix": "npx prettier --write ./src",
-    "preview": "vite preview",
-    "prepare": "husky"
+    "preview": "vite preview"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -45,6 +44,6 @@
     }
   },
   "lint-staged": {
-    "**/*.tsx": "npm run lint"
+    "**/*.{ts,tsx}": "npm run lint"
   }
 }
